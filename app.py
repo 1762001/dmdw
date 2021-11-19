@@ -1,6 +1,8 @@
 from flask import Flask, abort, request, render_template
 import numpy as np
 import pandas as pd
+import nltk
+
 from nltk.corpus import stopwords
 stop = set(stopwords.words('english'))
 stop.update(['.', ',', '"', "'", '?', '!', ':', ';', '(', ')', '[', ']', '{', '}',''])
